@@ -128,58 +128,76 @@ header {
 
 /* iPhone 11 Section */
 .iphone-11 {
-    background: url(images/hero/iphone-11/iphone_11_large.jpg);
+  background: url(images/hero/iphone-11/iphone_11_large.jpg);
 }
 
 .title-dark {
-    color: black; 
+  color: black;
 }
 
 .cta-link-darker {
-    color: #0070c9;
+  color: #0070c9;
 }
 
-.cta-link-darker:hover{
-    border-bottom-color:#0070c9;
+.cta-link-darker:hover {
+  border-bottom-color: #0070c9;
 }
 
 .watch {
-    background: url('images/hero/watch/watch_large.jpg') center no-repeat;
+  background: url("images/hero/watch/watch_large.jpg") center no-repeat;
 }
 
-.title-heading-watch{
-    height: 7.8rem;
-    background: url('images/hero/watch/logo_watch_medium.png') center no-repeat;
-    background-size: auto 7.8rem;
-    margin-top: 1.6rem;
+.title-heading-watch {
+  height: 7.8rem;
+  background: url("images/hero/watch/logo_watch_large.png") center no-repeat;
+  background-size: auto 7.8rem;
+  margin-top: 1.6rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Moved to the bottom of all section styles to keep consistent styles */
 .hero {
-    height: 69.2rem;
-    background-size: auto 73.6rem;
-    background-position: center;
+  height: 69.2rem;
+  background-size: auto 73.6rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 0.6rem solid white;
+  border-bottom: 0.6rem solid white;
+}
+*/ .iphone-11-pro {
+  border-top: none;
+}
+/* End of Moved */
+
+/* Mobile Styling  */
+
+@media screen and (max-width: 1068px) {
+  .iphone-11-pro {
+    background-image: url(images/hero/iphone-11-pro/iphone_11_pro_medium.jpg);
+  }
+  .iphone-11 {
+    background-image: url(images/hero/iphone-11/iphone_11_medium.jpg);
+  }
+  .watch {
+    background: url(images/hero/watch/watch_medium.jpg);
+  }
+  .hero {
+    height: 65rem;
+    background-size: auto 69.8rem;
+    background-position: bottom center;
     background-repeat: no-repeat;
-    border-top: 0.6rem solid white;
-    border-bottom: 0.6rem solid white;
-  } */
-  
-   .iphone-11-pro {
-    border-top: none;
-  } 
-  /* End of Moved */
+  }
+  .title-heading {
+    font-size: 4.4rem;
+  }
+  .title-sub-heading {
+    font-size: 2.4rem;
+  }
+  .cta-link:nth-child(2) {
+    margin-bottom: 2rem;
+  }
+  .title-heading-watch {
+    height: 6.2rem;
+    background: url(images/hero/watch/logo_watch_medium.png) center no-repeat;
+    background-size: auto 6.2rem;
+  }
+}
